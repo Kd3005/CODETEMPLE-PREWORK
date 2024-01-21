@@ -1,0 +1,46 @@
+#Question 1
+
+def hello_name(username):
+    x = input("enter your username")
+    print("Hello_" + x + "!")
+hello_name('username')
+
+#Question 2
+
+def first_odds():
+    for x in range(1,100):
+         if x%2!=0:
+           print(x)
+first_odds()
+
+#Question 3
+def max_num_in_list(num_list): 
+   listed_num = num_list.split(" ")
+   max_num = max(listed_num[0])
+   
+
+   return max_num
+num_list= input("Enter number list. Please put spaces between the numbers :)")
+the_num = max_num_in_list(num_list)
+print (max_num_in_list(num_list))
+
+
+#Question 4
+
+def is_leap_year(year):
+    if ((year%400 == 0) and (year%4==0)):
+        return True
+    elif (year%100!=0):
+        return False
+year = input("Is it a leap year? Enter your year.")
+is_leap_year(year)
+
+#Question 5
+
+def is_consecutive(list):
+    for x in range(0,len(list)-1):
+        if (list[x]+1) != list[x+1]:
+          return False
+    else:
+          return True
+print(is_consecutive([1,4,6,2,35]))
